@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Movie info - Top 1</title>
+    <meta name="description" content="Blog o filmach">
+    <meta name="keywords" content="filmy, bajki, seriale">
+    <meta name="author" content="Mikołaj Mażanowicz">
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+
+            <a class="navbar-brand" href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='logo-pasek1.png') }}" width="30" height="30" class="d-inline-block mr-1 align-bottom" alt=""> Movie info</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainmenu">
+
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for('index') }}"> Start </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true"> Twoje obejrzane filmy </a>
+
+                        <div class="dropdown-menu" aria-labelledby="submenu">
+
+                            <a class="dropdown-item" href="#"> Biblioteka </a>
+
+
+                            <div class="dropdown-divider"></div>
+
+                            <a class="dropdown-item" href="#"> Dodaj </a>
+
+
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('gallery') }}"> Galeria </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('about') }}"> O mnie </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#"> Konkursy </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('contact') }}"> Kontakt </a>
+                    </li>
+
+                </ul>
+
+                <form class="form-inline">
+
+                    <input class="form-control mr-1" type="search" placeholder="Wyszukaj" aria-label="Wyszukaj">
+                    <button class="btn btn-light" type="submit">Znajdź</button>
+
+                </form>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <article>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <aside class="col-12 text-center my-5">
+                        <a href="https://pl.wikipedia.org/wiki/Ojciec_chrzestny_(film)" target="_blank">
+                            <img class="img-fluid" src="{{ url_for('static', filename='WIKIPedia_lOGO.png') }}" alt="Ojciec chrzestny wikipedia">
+                        </a>
+                    </aside>
+
+                    <div class="col-lg-8 bg-white text-body wpis">
+
+                        <header>
+
+                            <h1 class="h2 font-weight-bold text-uppercase ml-0 mb-4 text-center text-md-left">Ojciec Chrzestny (1972), reż. Francis Ford Coppola</h1>
+
+                        </header>
+
+                        <p>
+                            Ojciec chrzestny (ang. The Godfather) – amerykański dramat gangsterski wyreżyserowany przez Francisa Forda Coppolę. Premiera filmu odbyła się w 1972 roku. Jego fabuła oparta jest na powieści o tym samym tytule autorstwa amerykańskiego pisarza włoskiego pochodzenia Maria Puzo. Scenariusz napisali wspólnie Puzo i Coppola.
+                        </p>
+
+                        <p class="lead">Aktorzy występujący w filmie to m.in. Marlon Brando, Al Pacino, Robert Duvall, Diane Keaton oraz James Caan. Film opowiada o historii rodziny mafijnej Corleone w latach 1945–1955. Dalsze losy rodziny Corleone zostały ukazane w Ojcu chrzestnym II oraz Ojcu chrzestnym III. </p>
+
+                        <h2 class="h3 font-weight-bold mb-4">Obsada</h2>
+
+                        <ul class="ml-4">
+                            <li>Marlon Brando jako Vito Corleone – głowa rodziny (Don) Corleone, urodzony jako Vito Andolini. Jest ojcem Santina, Frederica, Michaela i Connie, oraz przybranym Toma Hagena.</li>
+                            <li>Al Pacino jako Michael Corleone – najmłodszy syn Vita, po zakończeniu II wojny światowej wraca do domu. Początkowo nie chce mieć nic wspólnego z interesami rodziny Corleone.</li>
+                            <li>James Caan jako Santino „Sonny” Corleone – najstarszy syn Vita, jest porywczy; prawdopodobny sukcesor Vita jako głowy rodziny. Jest także zastępcą Vita.</li>
+                            <li>Robert Duvall jako Tom Hagen – nieformalnie adoptowany syn Vita Corleone, jest także rodzinnym prawnikiem i consigliere (doradcą).</li>
+                            <li>Diane Keaton jako Kay Adams – dziewczyna i późniejsza żona Michaela.</li>
+                            <li>John Cazale jako Frederico „Fredo” Corleone – „średni” w sensie wieku syn Vita. Nie jest zbyt zaradny w załatwianiu interesów rodziny.</li>
+                            <li>Talia Shire jako Connie Corleone – jedyna córka Vita Corleone, żona Carla Rizzi.</li>
+                            <li>Richard S. Castellano jako Peter Clemenza – caporegime (kapitan) rodziny Corleone.</li>
+                            <li>Abe Vigoda jako Salvatore Tessio – drugi caporegime (kapitan) rodziny Corleone.</li>
+                            <li>Al Lettieri jako Virgil „The Turk” Sollozzo – diler heroiny, związany z rodziną Tattaglia.</li>
+                            <li>Gianni Russo jako Carlo Rizzi – mąż Connie Corleone.</li>
+                            <li>Sterling Hayden jako Captain Mark McCluskey – skorumpowany kapitan policji opłacany przez Sollozzo.</li>
+                            <li>Lenny Montana jako Luca Brasi – ważny żołnierz w rodzinie Corleone.</li>
+                            <li>Richard Conte jako Emilio Barzini – Don rodziny Barzini.</li>
+                            <li>Al Martino jako Johnny Fontane – sławny piosenkarz i syn chrzestny Vita (postać prawdopodobnie wzorowana na Franku Sinatrze).</li>
+                            <li>John Marley jako Jack Woltz – producent z Hollywood.</li>
+                            <li>Alex Rocco jako Moe Greene – jeden z założycieli Las Vegas.</li>
+                            <li>Morgana King jako Carmella Corleone – żona Vita i matka Santina, Frederica, Michaela i Connie.</li>
+                            <li>John Martino jako Paulie Gatto – żołnierz rodziny Corleone i kierowca Vita.</li>
+                            <li>Victor Rendina jako Philip Tattaglia – Don rodziny Tattaglia.</li>
+                            <li>Simonetta Stefanelli jako Apollonia Vitelli-Corleone – piękna, młoda dziewczyna, którą Michael poznaje i poślubia na Sycylii.</li>
+                            <li>Saro Urzì jako Vitelli.</li>
+                        </ul>
+
+                        <h2 class="h3 font-weight-bold mb-4">Fabuła</h2>
+
+                        <p>Akcję filmu otwiera wesele córki Vita Corleone, Connie, i Carla Rizzi na Long Island w Nowym Jorku pod koniec lata 1945 roku. Ponieważ wedle zwyczaju żaden Sycylijczyk nie może odmówić prośby w dniu ślubu swojej córki, Corleone, znany wśród przyjaciół i współpracowników jako „Ojciec chrzestny”, oraz Tom Hagen (consigliere rodziny) są zasypywani różnymi prośbami od znajomych rodziny. W międzyczasie najmłodszy syn Dona, Michael Corleone, który powrócił z wojny na Pacyfiku, pojawia się jako bohater wojenny. Opowiada swojej partnerce, Kay Adams, o interesach rodziny, zapewniając ją jednocześnie, że on nie jest taki jak oni i chce podążać własną drogą. </p>
+
+                        <p>Wśród gości weselnych jest słynny piosenkarz Johnny Fontane, syn chrzestny Vita Corleone – przyjechał z Hollywood, aby poprosić Dona o pomoc w zdobyciu roli w filmie, która pomoże mu w dalszej karierze. Jack Woltz, szef studia nagraniowego, nie chce dać Fontane’owi tej roli; Don Corleone tłumaczy Johnny’emu, że „złoży mu propozycję nie do odrzucenia” (I’m gonna make him an offer he can’t refuse). Hagen zostaje wysłany do Kalifornii, aby zajął się tą sprawą. Rozdrażniony Woltz odmawia jednak, twierdząc, iż Fontane zrujnował młodą aktorkę, którą on kiedyś chciał wypromować. Następnego ranka Woltz budzi się w łóżku z odciętą głową konia rozpłodowego ze swojej stajni, kupionego za 600 000 dolarów.</p>
+
+                        <img class="img-thumbnail mb-3 d-block mx-auto" src="{{ url_for('static', filename='top1.jpg') }}" alt="Ojciec chrzestny">
+
+                        <p>Gdy Hagen wraca, rodzina spotyka się z dilerem heroiny Virgilem „Turkiem” Sollozzo, który ma wpływy w rodzinie Tattaglia. Prosi on Dona Corleone o protekcje polityków oraz współfinansowanie startu masowego importu i dystrybucji heroiny, ale pomimo możliwości zarobienia dużych pieniędzy Corleone odrzuca tę propozycję. Najstarszy syn Dona, porywczy „Sonny”, łamie zasady i wyraża swoje zainteresowanie propozycją, za co później ojciec go karci. </p>
+
+                        <img class="img-thumbnail mb-3 d-block mx-auto" src="{{ url_for('static', filename='ojciec2.jpg') }}" alt="Ojciec chrzestny">
+
+                        <p>Po odmowie Dona Corleone Sollozzo i jego wspólnicy uprowadzają Hagena, podczas gdy Don zostaje ciężko ranny w wyniku zamachu na jego życie. Sollozzo przekonuje Hagena, aby zaoferował „Sonny’emu” możliwość dobicia targu, ale  „Sonny” odrzuca możliwość rozpatrzenia tego na nowo, obiecując wojnę rodzinie Tattaglia i Sollozzowi. Rodzina Corleone przygotowuje się na piekło, jakie może się rozpętać po dołączeniu się do wojny pozostałych z „Pięciu Rodzin”, które zjednoczą się przeciwko rodzinie Corleone. </p>
+
+                        <img class="img-thumbnail mb-3 d-block mx-auto" src="{{ url_for('static', filename='ojciec3.jpg') }}" alt="Ojciec chrzestny">
+
+                        <p>Michael, przez resztę rodzin uważany za cywila, odwiedza swojego ojca w szpitalu, gdzie okazuje się, że nikt go nie ochrania. Młodzieniec uświadamia sobie, że ojciec został wystawiony i że ktoś go zabije. Przenosi ojca do innego pokoju, dzwoni do „Sonny’ego”, przedstawia mu sytuację i idzie na zewnątrz obserwować wejście. Gdy mordercy przyjeżdżają pod szpital i widzą, że ktoś stoi pod drzwiami, rezygnują ze swoich zamiarów i wycofują się. Po chwili przybywają oddziały policji wraz ze skorumpowanym kapitanem McCluskeyem, który uderza Michaela za sugestię, że jest przekupiony. Chwilę później pojawiają się Hagen i „prywatni detektywi” z licencjami na posiadanie broni, aby ochraniać Don Corleone. </p>
+
+                        <p class="mb-1">Po udaremnieniu zamachu na ojca w szpitalu Michael chce zabić Sollozza i kapitana McCluskeya, który jest ochroniarzem Sollozza. „Sonny” i pozostali członkowie rodziny są zaskoczeni decyzją Michaela; „Sonny” tłumaczy mu, że podchodzi do tego zbyt emocjonalnie. Jednakże Michael przekonuje go, że zabicie Sollozza i McCluskeya leży w interesie rodziny – „To nic osobistego, Sonny. To czysty biznes.” (It’s not personal, Sonny. It’s strictly business.).... </p>
+
+
+                        <h2 class="h3 font-weight-bold mb-4">Daty premier</h2>
+
+                        <p>Amerykańska premiera Ojca chrzestnego odbyła się 15 marca 1972 roku. Daty premier w innych państwach:</p>
+                        <ul class="ml-4">
+                            <li>Japonia: 15 czerwca 1972</li>
+                            <li>Niemcy: 24 sierpnia 1972</li>
+                            <li>Włochy: 14 września 1972</li>
+                            <li>Argentyna: 20 września 1972</li>
+                            <li>Szwecja: 27 września 1972</li>
+                            <li>Finlandia: 29 września 1972</li>
+                            <li>Norwegia: 16 października 1972</li>
+                            <li>Francja: 18 października 1972</li>
+                            <li>Australia: 2 listopada 1972</li>
+                            <li>Polska: 31 grudnia 1972</li>
+                            <li>Holandia: 18 stycznia 1973</li>
+                            <li>Hongkong: 11 października 1973</li>
+                            <li>Korea Północna: 6 czerwca 2006</li>
+                        </ul>
+
+                        <h2 class="h3 font-weight-bold mb-4">Sequele i adaptacje</h2>
+
+                        <h3>Ojciec chrzestny II</h3>
+                        <p>Sequel nakręcony w 1974 roku. Przedstawia dwie różne historie, przeplatające się nawzajem. Pierwsza opowiada o Michaelu Corleone pod koniec lat 50. XX w., gdy musi on sobie radzić z rozpadającym się małżeństwem oraz rosnącym imperium hazardu; druga – o jego ojcu Vito, o jego młodości na Sycylii, skąd musiał uciekać po zabójstwie jego ojca (lokalny boss mafii wydał na syna wyrok śmierci, ponieważ obawiał się zemsty z jego strony), o założeniu rodziny Corleone w Nowym Jorku i narodzinach dzieci. Głównym wątkiem jest pokazanie różnic pomiędzy Michaelem, chcącym zalegalizować rodzinny interes, a Vitem, budującym swoją rodzinę mafijną. Vito jest grany przez różnych aktorów, w zależności od wieku. Młodego Vita zagrał Robert De Niro, za co otrzymał Oscara. De Niro i Brando są jedynymi aktorami, którzy otrzymali Oscara za tę samą rolę.</p>
+                        <h3>Ojciec chrzestny III</h3>
+                        <p>W 1990 roku Coppola nakręcił trzecią część trylogii, która stała się komercyjnym sukcesem, ale opinie krytyków i fanów były podzielone. Mimo wszystko film otrzymał siedem oskarowych nominacji, m.in. za najlepszy film. Akcja filmu dzieje się w 1979 roku i skupia się na podstarzałym Michaelu Corleone. Część filmu była oparta na prawdziwych wydarzeniach, takich jak krótki pontyfikat Jana Pawła I.</p>
+                        <h3>Ojciec chrzestny Saga</h3>
+                        <p>W 1975 roku Coppola specjalnie dla telewizji połączył dwie pierwsze części trylogii, ustawiając sceny w porządku chronologicznym, dodając kilka wcześniej wyciętych scen i jednocześnie zmniejszając brutalność. Ta wersja dostała nazwę Ojciec chrzestny Saga. W 1992 Coppola stworzył kolejną wersję, noszącą tytuł: The Godfather Trilogy 1901–1980. Rozszerza ona Sagę o fabułę części trzeciej oraz kolejne, wcześniej niepokazywane sceny. Film w tej wersji trwa 583 minuty (9 godz. i 43 min).</p>
+
+                    </div>
+
+                    <aside class="col-lg-4">
+
+                        <img class="img-thumbnail" src="{{ url_for('static', filename='ojciec1.jpg') }}" alt="Ojciec Chrzestny (1972)">
+
+                        <h3 class="h4 my-4">Innie filmy</h3>
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item list-group-item-dark list-group-item-action active">1. Ojciec Chrzestny (1972)</a>
+                            <a href="#" class="list-group-item list-group-item-dark list-group-item-action">2. Titanic (1997)</a>
+                            <a href="#" class="list-group-item list-group-item-dark list-group-item-action">3. Przeminęło z wiatrem (1939)</a>
+                            <a href="#" class="list-group-item list-group-item-dark list-group-item-action">4. Lot nad Kukułczym Gniazdem (1975)</a>
+                            <a href="#" class="list-group-item list-group-item-dark list-group-item-action">5. Ojciec Chrzestny II (1974)</a>
+                            <a href="#" class="list-group-item list-group-item-dark list-group-item-action">6. Amadeusz (1984)</a>
+                            <a href="#" class="list-group-item list-group-item-dark list-group-item-action">7. Infiltracja (2006)</a>
+                            <a href="#" class="list-group-item list-group-item-dark list-group-item-action">8. Lista Schindlera (1993)</a>
+                            <a href="#" class="list-group-item list-group-item-dark list-group-item-action">9. Braveheart – Waleczne Serce (1995)</a>
+                            <a href="#" class="list-group-item list-group-item-dark list-group-item-action">10. Forrest Gump (1994)</a>
+                            <a href="#" class="list-group-item list-group-item-dark list-group-item-action">11. Gladiator (2000)</a>
+                            <a href="#" class="list-group-item list-group-item-dark list-group-item-action">12. Casablanca (1942)</a>
+                        </ul>
+
+                        <h3 class="h4 my-3">Mapa serwisu</h3>
+                        <ol class="list-unstyled ml-4">
+                            <li>Strona główna</li>
+                            <li>Twoje obejrzane filmy</li>
+                            <ul>
+                                <li>Biblioteka</li>
+                                <li>Dodaj</li>
+                            </ul>
+                            <li>Galeria</li>
+                            <li>O mnie</li>
+                            <li>Konkursy</li>
+                            <li>Kontakt</li>
+                        </ol>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
